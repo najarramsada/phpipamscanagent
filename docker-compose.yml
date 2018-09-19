@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  ipamscan:
+    build: .
+    container_name: phpIPAMscanAgent
+    restart: always
