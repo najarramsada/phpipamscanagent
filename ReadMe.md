@@ -18,9 +18,9 @@ For scheduled scans you have to run script from cron. Add something like followi
 each 15 minutes:
 
 Once the docker container is running, enter the docker bash and update the crontab of the container.
- `docker exec -it <Container ID> bash
- `crontab -e`
- `*/15 * * * * php /where/your/agent/index.php update`
+ - `docker exec -it <Container ID> bash`
+ - `crontab -e`
+ - `*/15 * * * * php /where/your/agent/index.php update`
 
 ## Contact
 `ramsadanajar@gmail.com`
