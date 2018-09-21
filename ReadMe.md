@@ -9,8 +9,8 @@ phpipam is released under the GPL v3 license, see misc/gpl-3.0.txt.
 This docker container is released under the same license.
 
 ## Requirements
- - This docker container includes the required PHP modules. You can install additional packages by modifying the dockerfile.
- - You will need to update the config.php file with your own environment for it to work.
+ - This docker container includes the required PHP modules. You can install additional packages by modifying the dockerfile if    you wish to.
+ - You will need to update the config.php file with your own environment for subnet scanning to work.
 
 ## Install
  - Update the config.php files with your scanagent key and database parameters.
