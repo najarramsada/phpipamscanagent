@@ -26,15 +26,15 @@ This docker container is released under the same license.
    - `$config['db']['name'] = "phpipam";`
    - `$config['db']['port'] = 3306;`
     
- - Run `docker run --rm -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
+ -`docker run --rm -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
  
  `--rm` will remove the container after it has completed the update and discover of IPs.
  
  To run the this image in bash mode 
- - Run `docker -it -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent bash`
+ - `docker run -it -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent bash`
  
  To run the this image in detached mode
- - Run `docker -t -d -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
+ -`docker run -t -d -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
 
 ## Scheduled scans
 For scheduled scans set up a crontab to run the container every 15 mins.
