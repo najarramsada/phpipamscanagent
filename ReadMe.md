@@ -9,6 +9,7 @@ phpipam is released under the GPL v3 license, see misc/gpl-3.0.txt.
 This docker container is released under the same license.
 
 ## Requirements
+ - A running phpIPAM server either in Docker container or standalone server. Visit First install the phpIPAM in docker and configure, visit https://github.com/pierrecdn/phpipam.
  - This docker container includes the required PHP modules. You can install additional packages by modifying the dockerfile if    you wish to.
  - You will need to update the config.php file with your own environment for subnet scanning to work.
 
