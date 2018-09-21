@@ -45,6 +45,7 @@ For scheduled scans set up a crontab to run the container every 15 mins.
 cronjob.sh should have the docker run command
 
 `#!/bin/bash`
+
 `docker run --rm --network=host -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
 
 ## Contact
