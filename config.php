@@ -10,7 +10,7 @@ $config['type'] = "mysql";
 
 # set agent key
 # ******************************/
-$config['key'] = "335bdc3f11b1879e010776f6979c053c";
+$config['key'] = "bea5a9728cbdbf2c1d77e4d6dfeffddd";
 
 # set scan method and path to ping file
 #	ping, fping or pear
@@ -19,7 +19,7 @@ $config['key'] = "335bdc3f11b1879e010776f6979c053c";
 //$config['pingpath'] = "/sbin/ping";
 
 $config['method'] 	= "fping";
-$config['pingpath'] = "/bin/ping";
+$config['pingpath'] = "/usr/sbin/fping";
 
 # permit non-threaded checks (default: false)
 # ******************************/
@@ -48,9 +48,9 @@ $config['remove_inactive_dhcp']         = false;
 
 # mysql db settings, if mysql selected
 # ******************************/
-$config['db']['host'] = "dbhost";
-$config['db']['user'] = "username";
-$config['db']['pass'] = "password";
+$config['db']['host'] = "DBhostname";
+$config['db']['user'] = "DBUsername";
+$config['db']['pass'] = "DBPassword";
 $config['db']['name'] = "phpipam";
 $config['db']['port'] = 3306;
 

@@ -2,25 +2,25 @@
 phpipamscanagent is a scanning agent for phpipam server to be deployed to remote servers in docker environment.
 This is a docker container for the phpIPAM agent, please see https://github.com/phpipam/phpipam-agent for the actual scanning agent.
 
+This docker container will run phpIPAM scan agent with update and discover parameters and can be used to setup a scheduled scan of the subnets.  
+
 ## License
 phpipam is released under the GPL v3 license, see misc/gpl-3.0.txt.
 This docker container is released under the same license.
 
 ## Requirements
  - This docker container includes the required PHP modules. You can install additional packages by modifying the dockerfile.
+ - You will need to update the config.php file with your own environment for it to work.
 
 ## Install
  - Update the config.php files with your scanagent key and database parameters.
- - Run `docker-compose up -d`
+ - Run `docker run --rm -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
 
 ## Scheduled scans
-For scheduled scans you have to run script from cron. Add something like following to your cron to scan
-each 15 minutes:
-
-Once the docker container is running, enter the docker bash and update the crontab of the container.
- - `docker exec -it <Container ID> bash`
+For scheduled scans set up a crontab to run the container every 15 mins.
+ - Update the cronjob.sh with the correct location of the config file and setup a crontab on host server.
  - `crontab -e`
- - `*/15 * * * * php /where/your/agent/index.php update`
+ - `*/15 * * * * /src/cronjob.sh`
 
 ## Contact
 `ramsadanajar@gmail.com`
