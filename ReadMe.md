@@ -16,15 +16,16 @@ This docker container is released under the same license.
 
 ## Install
  - Update the config.php files with your scanagent key and database parameters.
-    Update the scanagent key obtained from phpIPAM server.
-    `$config['key'] = "335bdc3f11b1879e010776f6979c053c";`
+   
+   Update the scanagent key obtained from phpIPAM server.
+   `$config['key'] = "335bdc3f11b1879e010776f6979c053c";`
     
-    Update the database parameters to match your environment
-    `$config['db']['host'] = "DBHostname";
-    $config['db']['user'] = "DBUsername";
-    $config['db']['pass'] = "DBPassword";
-    $config['db']['name'] = "phpipam";
-    $config['db']['port'] = 3306;`
+   Update the database parameters to match your environment
+   `$config['db']['host'] = "DBHostname";
+   $config['db']['user'] = "DBUsername";
+   $config['db']['pass'] = "DBPassword";
+   $config['db']['name'] = "phpipam";
+   $config['db']['port'] = 3306;`
     
  - Run `docker run --rm -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
  
