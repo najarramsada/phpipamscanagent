@@ -30,11 +30,11 @@ This docker container is released under the same license.
  
  `--rm` will remove the container after it has completed the update and discover of IPs.
  
- To run the this image in bash mode 
+ To run the this image in bash mode
  - `docker run -it -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent bash`
  
  To run the this image in detached mode
- -`docker run -t -d -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
+ - `docker run -t -d -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
 
 ## Scheduled scans
 For scheduled scans set up a crontab to run the container every 15 mins.
