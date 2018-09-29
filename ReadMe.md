@@ -26,7 +26,8 @@ This docker container is released under the same license.
    - `$config['db']['name'] = "phpipam";`
    - `$config['db']['port'] = 3306;`
     
- -`docker run --rm -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
+ ### Run
+ `docker run --rm -v /src/config.php:/ipamscan/config.php najarramsada/phpipamscanagent`
  
  `--rm` will remove the container after it has completed the update and discover of IPs.
  
